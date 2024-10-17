@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+      
+		<link rel="stylesheet" href="SignUp.css">
+	</head>
+	<body>
+       <section class="SignUpForm">
+        <h1> SignUp Page  </h1>
+       
+       <div class="Name" id="Name">
+        <label>Name </label>
+        <input id="Iname" type="text">
+        <span class="Error" id="Vname"></span>
+       </div>
+
+       <div class="Email" id="Email">
+        <label>Email </label>
+        <input id="Iemail" type="text">
+        <span class="Error" id="Vemail"></span>
+       </div>
+
+       <div class="Password" id="Password">
+        <label>Password </label>
+        <input id="Ipassword" type="password">
+        <span class="Error" id="Vpassword"></span>
+       </div>
+       <div class="Password" id="CPassword">
+        <label>Confirm Password </label>
+        <input id="Cpassword" type="password">
+        <span class="Error" id="CVpassword"></span>
+       </div>
+
+       <div class="Gender" id="Gender">
+        <label>Gender </label>
+        <input id="male" type="radio" value="male" class="RadioG" name="RadioG">Male
+        <input id="female" type="radio" value="female" class="RadioG" name="RadioG">Female
+        <span class="Error" id="Vgender"></span>
+       </div>
+
+       <div class="Country" id="Country">
+        <label> Country</label>
+        <select name="Country" id="CountrySelector">
+            
+            <option value="EGYPT">EGYPT</option>
+            <option value="UEA">UEA</option>
+            <option value="PALSTAINE">PALSTAINE</option>
+            <option value="ALGRIA">ALGRIA</option>
+            <option value="QATAR">QATAR</option>
+            <option value="OMAN">OMAN</option>
+            
+        </select>
+        <span class="Error" id="Vcountry" > </span>
+
+       </div>
+
+       <div class="btnC" id="btn">
+        <button id="Submit" onclick="SubmitData()">Submit</button>
+        <button id="Reset" onclick="ResetData()">Reset</button>
+        <button id="Backbtn" onclick="Back()">Back</button>
+        
+       </div>
+    </section>
+	<script src="./SignUp.js"></script>
+    </body>
+</html>

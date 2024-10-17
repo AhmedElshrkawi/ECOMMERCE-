@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-srif;
+}
+
+body{
+    min-height: 100vh;
+    background: #FED7A5;
+}
+.contanier{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    
+    margin: 50px auto;
+    padding: 20px;
+}
+.fillter-buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 10px;
+    
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: white;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+}
+button.active{
+    background: #2D4354;
+    color: aliceblue;
+}
+.price{
+font-size: 18px;
+font-weight: bold;
+}
+.filterable-cards{
+    display: flex;
+    margin-top: 25px ;
+    color: #73766A;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.card{
+    flex-grow:1 ;
+    flex-basis: 300px;
+    background-color: #9E6752;
+    padding: 3px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.05);
+
+}
+.card:hover{
+ background-color: #534145;
+ cursor: pointer;
+ color: #73766A;
+ transition: all 0.3s;
+}
+.card.hide{
+ display: none;
+}
+.card img {
+    height: 210px;
+    width: 100%;
+    border-radius: 8px 8px 0 0 ;
+    object-fit: cover; 
+}
+.card-body{
+    padding: 15px 20px 20px;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.card-text{
+    font-size: 18px;
+    
+    color: burlywood;
+}
+
+#scrollToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 10px; 
+    padding: 10px 10px;
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-back{
+    position: fixed;
+    right: 5px;
+    width: 110px;
+    font-size: 15px;
+    padding: 5px;
+}
+.btn-back a{
+    text-decoration: none;
+    color: teal;
+}
+.btn-back:hover{
+   background-color: tomato;
+   color: #534145;
+}
